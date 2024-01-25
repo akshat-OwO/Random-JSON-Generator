@@ -14,6 +14,8 @@ function App() {
     const generateJSON = () => {
         try {
             setError(null);
+            setFilteredJSON(null);
+            setSearchQuery("");
             const data = generateRandomJSON();
             setGeneratedJSON(JSON.parse(data));
         } catch (e) {
